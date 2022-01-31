@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='description' content='Vanilla JS todo app.'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+	<title>TODO app</title>
+
+	<link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+<div class='container'>
+	<h1 class='app-title'>TODO APP</h1>
+	<small class='app-description'>Hi, this is simplest todo app with minimal functionality. Here you can create, edit,
+		delete and complete todos. Let's try!</small>
+
+	<form class='add' id='add-form'>
+		<input type='text' class='add-input' id='add-input' placeholder='Todo title' data-type='add'>
+		<button class='add-btn' type='submit'>
+			<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+				<path
+					d='M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0 c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7 C514.5,101.703,514.499,85.494,504.502,75.496z' />
+			</svg>
+		</button>
+		<button class='cancel-btn' type='reset'>
+			<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+				<path
+					d='M294.111,256.001L504.109,46.003c10.523-10.524,10.523-27.586,0-38.109c-10.524-10.524-27.587-10.524-38.11,0L256,217.892 L46.002,7.894c-10.524-10.524-27.586-10.524-38.109,0s-10.524,27.586,0,38.109l209.998,209.998L7.893,465.999 c-10.524,10.524-10.524,27.586,0,38.109c10.524,10.524,27.586,10.523,38.109,0L256,294.11l209.997,209.998 c10.524,10.524,27.587,10.523,38.11,0c10.523-10.524,10.523-27.586,0-38.109L294.111,256.001z' />
+			</svg>
+
+		</button>
+	</form>
+
+	<ul class='cards' id='items'>
+		<li class='loading'>
+			<div class='loading-title'></div>
+
+			<div class='loading-bottom'>
+				<div class='loading-dates'>
+					<div class='date'></div>
+					<div class='date'></div>
+				</div>
+
+				<div class='loading-icon'></div>
+			</div>
+		</li>
+		<li class='loading'>
+			<div class='loading-title'></div>
+
+			<div class='loading-bottom'>
+				<div class='loading-dates'>
+					<div class='date'></div>
+					<div class='date'></div>
+				</div>
+
+				<div class='loading-icon'></div>
+			</div>
+		</li>
+		<li class='loading'>
+			<div class='loading-title'></div>
+
+			<div class='loading-bottom'>
+				<div class='loading-dates'>
+					<div class='date'></div>
+					<div class='date'></div>
+				</div>
+
+				<div class='loading-icon'></div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class='theme-switcher'>
+	<input type='checkbox' class='theme-switcher-input' id='theme' />
+	<label for='theme' class='theme-switcher-toggle'></label>
+</div>
+</body>
+<script src='index.js'></script>
+</html>
